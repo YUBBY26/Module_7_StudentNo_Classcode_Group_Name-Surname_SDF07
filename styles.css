@@ -21,3 +21,91 @@ body {
 img {
     display: block;
 }
+.gallery {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   row-gap: 8px;
+   column-gap: 10px;
+    margin: 0 auto;
+  }
+  .gallery-item > img {
+    position: relative;
+      height: 300px;
+      width: 100%;
+}
+ .gallery-item > img:hover {
+    transform: scale(1.1);
+    color: grey;
+ }
+.profile-stats > ul {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    font-size: 10px;
+    margin-left: 190px;
+    list-style: none;
+  }
+
+  .profile-image > img {
+   border: 4px;
+   border-style: solid;
+   border-color: rgb(6, 99, 6);
+   border-radius: 75px;
+   height: 150px;
+   width: auto;
+   margin-left: 30px;
+  }
+ .profile-user-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.profile-user-name {
+    margin-left: 119px;
+    margin-right: 20px ;
+}
+
+.profile-edit-btn {
+    background-color: snowwhite;
+    font-size: larger;
+    padding: 4px 13px;
+    border: solid;
+    border-radius: 5px;
+}
+.profile-settings-btn {
+    border: none;
+    background-color: white;
+}
+.profile-bio {
+    margin-left: 200px;
+    font-size: small;
+}
+.loader {
+    border: 4px solid #3f5d06;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin .3s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: "Open Sans", Arial, sans-serif;
+        background-color: #fafafa;
+        color: #262626;}
+}
